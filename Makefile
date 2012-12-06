@@ -1,4 +1,4 @@
-JUNK_FILES=*.aux *.log styles/*.aux *.dvi *.pdf
+JUNK_FILES=*.aux *.log styles/*.aux *.dvi
 
 release: clean view
 
