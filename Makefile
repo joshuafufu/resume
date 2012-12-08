@@ -1,9 +1,10 @@
-JUNK_FILES=*.aux *.log styles/*.aux *.dvi
+JUNK_FILES=*.aux *.log styles/*.aux *.dvi *.pdf
 
 release: clean view
 
 view: resume.pdf
 	open resume.pdf
+	cp resume.pdf ~/Dropbox/jobs/
 
 resume.pdf: resume.dvi
 	dvipdfmx resume.dvi
