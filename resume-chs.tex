@@ -1,0 +1,89 @@
+%the margin option causes section titles to appear to the left of body text.
+\documentclass[line, margin, 12pt]{res}
+
+\usepackage{fontspec}
+\setromanfont{STFangsong}
+\newfontfamily{\K}{BiauKai}
+\setmonofont[Scale=0.8]{Courier New} % 等寬字型
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\author{Zhongfu Gao}
+\title{Resume}
+\date{\today}
+
+\begin{document}
+
+\renewcommand{\namefont}{ \LARGE \bf } %% name font
+\name{郜忠富}
+\address{{\bf 电子邮件: }joshuafufu@gmail.com}
+\address{{\bf 移动电话: }(+86)15921928229}
+
+\begin{resume}
+
+\section{教育背景}
+{\bf 软件工程学士}\\
+复旦大学\hfill {\it Sep 2006 - July 2010}\\
+
+\section{技能}
+{\bf 计算机语言:} Java, C, Shell Scripting, Python, JavaScript, Sql \\
+{\bf 数据库:} MySQL, Oracle\\
+{\bf 英语:} CET-6
+
+\section{工作经验}
+
+%% experience 1
+{\bf 软件工程师}\hfill {\it Dec 2011 - Current}\\
+{\sl 公司:} 爱立信\\
+{\sl 项目经验:} 会议系统\\
+{\sl 职责} \& {\sl 收获:}
+\begin{itemize}
+\item 使用J2EE技术开发了会议系统中smart link，email，sms以及recurrent meeting等模块。
+\item 学习并运用敏捷、测试驱动开发、结对编程等理念进行开发。
+\item 加强了Java开发的技术，对设计模式有了更深的理解并能熟练运用。
+\item 乐于在工作中对代码和产品进行不断的优化，并进行代码重构，锻炼和提高了自己的开发技能。
+\item 对新技术的学习积极主动，并且善于运用到项目的优化中去。比如，学习python用于改进CI以及简化功能测试。
+\item 提高了英语和沟通交流能力。
+\end{itemize}
+
+%% experience 2
+{\bf 软件工程师}\hfill {\it Mar 2011 - Dec 2011}\\
+{\sl 公司:} 中国银行软件中心\\
+{\sl 项目经验:} 出国供汇系统\\
+{\sl 职责} \& {\sl 收获:}
+\begin{itemize}
+\item 参与设计并开发了出国供汇系统，该系统是一个使用C、java以及Sql语言开发的外币兑换系统。
+\item 从项目立项开始全程参与了该系统的设计与开发，从实践种了解了基于瀑布模型的开发流程。
+\item 主要设计和开发了出国供汇系统种的外币兑换和对账模块。
+\end{itemize}
+
+\pagebreak
+%% experience 3
+{\bf 软件工程师}\hfill {\it Oct 2010 - Dec 2011}\\
+{\sl 公司:} 中国银行软件中心\\
+{\sl 项目经验:} 第三方存管系统，股商存管系统\\
+{\sl 职责} \& {\sl 收获:}
+\begin{itemize}
+\item 主要负责开发和维护第三方存管和股商存管系统。
+\item 学习了大量的银行业务，对银行系统的架构有了较深的理解。
+\item 加强了客户现场解决问题的能力。提升了面对问题的承受能力，尤其是在有来自客户较大的压力的情况下。
+\item 通过学习Oracle数据库索引，运用到第三方存管系统中持久化层，提高了TPCC系统的性能。对Oracle索引包括Oracle数据库性能调优基础知识的学习，在部门进行了知识的分享。
+\item 在第三方存管系统和股商存管系统中开发了整合虚拟账户和其它各类账户的功能模块。
+\end{itemize}
+
+%% experience 4
+{\bf 软件工程师}\hfill {\it Jul 2010 - Oct 2010}\\
+{\sl 公司:} 中国银行软件中心\\
+{\sl 项目经验:} 批量数据平台\\
+{\sl 职责} \& {\sl 收获:}
+\begin{itemize}
+\item 使用Java，Jsp，Javascript，Hibernate和Spring等技术开发和维护了批量数据平台的web portal。这个产品用于银行柜员每日自动对账。
+\item 提升了与项目成员和客户进行沟通和协同工作的能力。
+\end{itemize}
+
+\section{个性}
+{\bf 技术爱好:} 对计算机技术有很大的热情。空闲的时间里，我也花了大多数的时间学习新的技术。\\
+{\bf 性格:} 易相处，真诚。\\
+{\bf 业余爱好:} 喜欢如篮球和足球之类的集体运动，善于团队合作。\\
+\end{resume}
+\end{document}
